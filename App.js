@@ -61,6 +61,8 @@ export default function App() {
                           _pressed={{ bg: 'emerald.700' }}
                           width={'200'} borderRadius={10} p={'3'} bg={'emerald.500'} 
                           onPress={countDown}
+                          _disabled={{ bg: 'gray.200'}}
+                          disabled={count === 0}
                         >
                           <Text fontSize={'2xl'} fontWeight={'bold'} textAlign={'center'} color={'white'}>Count Down</Text>
                         </Pressable>
